@@ -1,9 +1,9 @@
 require 'sinatra'
 
 get '/' do 
-	unless params[:name]
+	unless params[:nombre]
 		"Hola desconocido!"
 	else
-		"Hola #{params[:name]}!"
+		"Hola #{params[:nombre]}!"
 	end
 end
