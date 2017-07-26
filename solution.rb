@@ -12,5 +12,9 @@ end
 
 
 get '/:nombre' do
-	"Hola #{params[:nombre].capitalize}!"
+	<<-HTML 
+		<h1>Hola #{params[:nombre].capitalize}!<h1>
+	HTML
 end
+
+ 
