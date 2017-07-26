@@ -10,6 +10,7 @@ get '/' do
 end
 =end
 
+
 get '/:nombre' do
 	"Hola #{params[:nombre].capitalize}!"
 end
