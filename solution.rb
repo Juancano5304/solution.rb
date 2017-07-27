@@ -8,7 +8,7 @@ get '/' do
 		"Hola #{params[:nombre]}!"
 	end
 end
-=end
+
 
 
 get '/makers/:nombre' do
@@ -16,5 +16,18 @@ get '/makers/:nombre' do
 		<h1>Hola #{params[:nombre].capitalize}!<h1>
 	HTML
 end
+=end
 
- 
+get "/" do
+	<<-HTML
+		<h1>Hola dime a quien saludar</h1>	
+		<form action="/nuevo/objeto" method="post">
+			<input type="text" name="verbo"></input>
+			<input type="submit" value="todo en orden"></input>
+ 		</form>
+ 	HTML
+ end
+
+ post '/nuevo/objeto' do
+ 	"Hola #{params[:verbo]}"
+ end
