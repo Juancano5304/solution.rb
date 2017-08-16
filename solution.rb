@@ -16,7 +16,7 @@ get '/makers/:nombre' do
 		<h1>Hola #{params[:nombre].capitalize}!<h1>
 	HTML
 end
-=end
+
 
 get "/" do
 	<<-HTML
@@ -31,3 +31,23 @@ get "/" do
  post '/nuevo/objeto' do
  	"Hola #{params[:verbo]}"
  end
+
+get "/" do
+	<<-HTML
+		<h1>Hola</h1>
+	HTML
+	i=0
+	while i < 50 do
+		i=i+1
+		if(i%2 == 0)
+			i+" Soy Par!"
+		else
+			i+" Soy Impar!"
+		end
+	end
+end
+=end
+
+get "/" do
+	"HcUy6Re2LLBRtj"
+end
