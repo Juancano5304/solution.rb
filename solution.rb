@@ -38,16 +38,7 @@ end
 =end
 
 get "/" do
-	#erb :index
-	"Soy Juan"
 
-	
-	#50.times do |x|
-		#if (x%2) == 0
-			"x Soy Par!"
-		#else
-			"x Soy Impar!"
-		#end
-	#end
+	erb :index
 	
 end

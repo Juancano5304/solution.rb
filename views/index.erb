@@ -1,8 +1,8 @@
 <h1>Hola</h1>
-<% 50.times do |x| %>
+<% 1.upto(50) do |x| %>
 	<% if (x%2) == 0 %>
-		<p><%= "[:x] Soy Par!" %></p>
+		<p><%= "#{x} Soy Par!" %></p>
 	<% else %>
-		<p><%="[:x] Soy Impar!" %></p>
+		<p><%="#{x} Soy Impar!" %></p>
 	<% end %>
 <% end %>
