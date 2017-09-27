@@ -39,6 +39,13 @@ end
 
 get "/" do
 
+	@@cont=0
 	erb :index
 	
+end
+
+
+get "/suma" do
+	@@cont += 1
+	erb :index
 end
