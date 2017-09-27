@@ -5,12 +5,20 @@
 	<% else %>
 		<p><%="#{x} Soy Impar!" %></p>
 	<% end %>
-<% end %> -->
+<% end %> 
 
 <HEAD>
-	<h1>Mi cuenta es : <%= @@cont %></h1>
+	<h1>Mi cuenta es : <%= @cont %></h1>
 	<form action="/suma" method="get" name="@cont">
 		<input type="submit" value="Suma!">
 	</form>
 	
-</HEAD>
+</HEAD>  
+-->
+
+<h1>Abuela Sorda</h1>
+<label>Di algo Abuela:</label>
+<form action="/abuela" method="get">
+	<input type="text" name="texto">
+	<input type="submit" name="Dilo!">
+</form>

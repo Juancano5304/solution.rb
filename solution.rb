@@ -35,7 +35,7 @@ get "/" do
 get "/" do
 	"HcUy6Re2LLBRtj"
 end
-=end
+
 
 get "/" do
 
@@ -48,4 +48,21 @@ end
 get "/suma" do
 	@@cont += 1
 	erb :index
+end
+
+=end
+
+get "/" do
+	erb :index
+end
+
+get "/abuela" do
+	@texto = params[:texto]
+	if @texto.to_str == @texto.to_str.upcase
+		@texto = "Ahhh si, manzanas!"
+	else
+		@texto = "Habla más duro mijito"
+	end
+
+	erb :index2
 end
