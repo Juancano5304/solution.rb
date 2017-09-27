@@ -33,21 +33,21 @@ get "/" do
  end
 
 get "/" do
-	<<-HTML
-		<h1>Hola</h1>
-	HTML
-	i=0
-	while i < 50 do
-		i=i+1
-		if(i%2 == 0)
-			i+" Soy Par!"
-		else
-			i+" Soy Impar!"
-		end
-	end
+	"HcUy6Re2LLBRtj"
 end
 =end
 
 get "/" do
-	"HcUy6Re2LLBRtj"
+	#erb :index
+	"Soy Juan"
+
+	
+	#50.times do |x|
+		#if (x%2) == 0
+			"x Soy Par!"
+		#else
+			"x Soy Impar!"
+		#end
+	#end
+	
 end
