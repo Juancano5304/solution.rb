@@ -1,6 +1,7 @@
 require 'sinatra'
 
 =begin
+
 get '/' do 
 	unless params[:nombre]
 		"Hola desconocido!"
