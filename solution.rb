@@ -50,8 +50,6 @@ get "/suma" do
 	erb :index
 end
 
-=end
-
 get "/" do
 	erb :index
 end
@@ -65,4 +63,10 @@ get "/abuela" do
 	end
 
 	erb :index2
+end
+
+=end
+
+get "/" do
+	request.user_agent
 end
